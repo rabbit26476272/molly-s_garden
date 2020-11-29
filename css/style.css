@@ -196,6 +196,12 @@ input[type="text"] {
 .product-photo img {
     width: 96%;
 }
+.product-photo img:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
+}
 .prodcut-owner img {
     width: 15px;
     display: inline;
