@@ -23,6 +23,7 @@
 </head>
 
 <body style="background-color: black;">
+
     <nav>
         <ul class="drop-down-menu">
             <li><a href="#">首頁</a>
@@ -59,23 +60,96 @@
                 <button class="cart"><img src="img/shopping-cart.png"><i>購物車</i></button>
             </div>
             <div class="memberButtom">
-                <i class="sign">登錄</i>
-                <i class="registered">註冊</i>
+                <a id="signBtn" href="#">登錄</a>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content" style="
+                    background-color: #000;
+                    width: 50%;
+                    border: 1px solid;
+                    border-radius: 2px;
+                ">
+                        <span class="close" style="
+                            font-size: 50px;
+                            font-weight: 100;
+                            color: white;
+                        ">&times;</span>
+
+                        <h2>登錄或註冊</h2>
+                        <div class="popupLayerContent">
+                            <div class="inputContent">
+                                <input class="form-control mr-sm-5" type="text" placeholder="用戶名" aria-label="Search">
+                                <input class="form-control mr-sm-5" type="text" placeholder="密碼" aria-label="Search">
+                                <h5>登錄</h5>
+                            </div>
+                            <div class="elseContent">
+                                <h4>還不是免費會員？</h4>
+                                <p>不要錯過下列誘人福利！</p>
+                                <div class="welfare">
+                                    <img src="img/tick.png">
+                                    <p>購買花朵</p>
+                                </div>
+                                <div class="welfare">
+                                    <img src="img/tick.png">
+                                    <p>發表評論</p>
+                                </div>
+                                <div class="welfare">
+                                    <img src="img/tick.png">
+                                    <p>添加最愛</p>
+                                </div>
+                                <div class="welfare">
+                                    <img src="img/tick.png">
+                                    <p>使用花朵</p>
+                                </div>
+                                <p>還有更多！</p>
+                                <h5>註冊</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a class="registered" href="index.html">註冊</a>
             </div>
         </div>
         <div class="menu">
             <li class="btn-group">
                 <button class="menu-item" type="button">首頁</button>
                 <button class="menu-item" type="button">熱門商品</button>
-                <button class="menu-item  type=" button">最新上架</button>
-                <button class="menu-item  type=" button">特價商品</button>
+                <button class="menu-item" type="button">最新上架</button>
+                <button class="menu-item" type="button">特價商品</button>
                 <button class="menu-item dropdown-toggle" type="button">商品分類</button>
             </li>
         </div>
     </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
+        // Get the button that opens the modal
+        var btn = document.getElementById("signBtn");
 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 <footer>
     <div class="map">
