@@ -248,13 +248,14 @@ input[type="text"] {
 .cart:hover {
     background-color: RGB(255, 163, 26);
 }
-.memberButtom i {
+.memberButtom a {
     font-style: initial;
     margin: 20px;
     color: DarkGray;
     font-size: 13px;
 }
-.memberButtom i:hover {
+.memberButtom a:hover {
+    text-decoration: none;
     color: white;
 }
 .menu {

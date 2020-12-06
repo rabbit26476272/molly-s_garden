@@ -1,3 +1,111 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 10px;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myModal h2 {
+    text-align: center;
+    color: white;
+}
+.close {
+    text-align: right;
+}
+.inputContent {
+    width: 45%;
+    margin: 20px;
+    text-align: center;
+    display: inline-grid;
+}
+.inputContent h5 {
+    margin: 10px;
+    width: 100%;
+    color: #000;
+    background-color: RGB(255, 153, 0);
+    border-radius: 3px;
+    padding: 15px 0px;
+    font-weight: bolder;
+}
+.inputContent h5:hover,
+.inputContent h5:focus {
+    background-color: RGB(255, 163, 26);
+}
+.inputContent input {
+    margin: 10px;
+    background: #000 !important;
+    border: 1px solid !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+}
+
+.inputContent input:focus {
+    background: #000 !important;
+    border-style: solid !important;
+    border-color: #ccc !important;
+}
+.elseContent {
+    width: 45%;
+    border-left: 1px solid;
+    display: inline-grid;
+    text-align: center;
+}
+.elseContent h4 {
+    color: white;
+}
+.elseContent h5 {
+    color: darkgrey;
+    padding: 15px;
+    margin: 0px 40px;
+    border-radius: 5px;
+    background-color: RGB(31, 31, 31);
+}
+.elseContent h5:hover,
+.elseContent h5:focus {
+    background-color: RGB(63, 63, 63);
+}
+.elseContent p {
+    font-weight: 500;
+    color: darkgrey;
+    margin: 10px;
+}
+.welfare {
+    margin: 0px;
+    display: block;
+}
+.welfare p,
+.welfare img {
+    display: inline-grid;
+    margin: 0px;
+}
+.welfare img {
+    width: 15px;
+}
+/* popup-end */
 nav {
     padding: 0 75px;
     margin-bottom: -6px;
@@ -118,7 +226,7 @@ input[type="text"] {
     padding: 4px 10px;
     border-radius: 4px;
 }
-.mainButtom i {
+.mainButtom a {
     font-style: initial;
 }
 .mainButtom img {
@@ -140,13 +248,14 @@ input[type="text"] {
 .cart:hover {
     background-color: RGB(255, 163, 26);
 }
-.memberButtom i {
+.memberButtom a {
     font-style: initial;
     margin: 20px;
     color: DarkGray;
     font-size: 13px;
 }
-.memberButtom i:hover {
+.memberButtom a:hover {
+    text-decoration: none;
     color: white;
 }
 .menu {
